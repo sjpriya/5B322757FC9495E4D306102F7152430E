@@ -54,7 +54,7 @@ function setup() {
 function draw() {
   background("black");
   textSize(20)
- //text("Score : "+score,20,30);
+  text("Score : "+score,20,30);
   Engine.update(engine);
   ground.display();
   
@@ -67,6 +67,7 @@ function draw() {
      particles.push(new Particle(random(width/2-30, width/2+30), 10,10));
      score++;
    }
+  console.log(score);
  
   for (var j = 0; j < particles.length; j++) {
    
